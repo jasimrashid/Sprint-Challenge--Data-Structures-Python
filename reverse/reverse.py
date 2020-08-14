@@ -41,24 +41,22 @@ class LinkedList:
     def reverse_list(self, node, prev):
         ll_new = LinkedList()
         current_node = self.head
-        # while current_node.next_node is not None:
         while current_node is not None:
             ll_new.add_to_head(current_node.value)
             current_node = current_node.next_node
-        # breakpoint()
         self.head = ll_new.head
 
 
 
-
-ll = LinkedList()
-ll.add_to_head(1)
-ll.add_to_head(2)
-ll.add_to_head(3)
-ll.add_to_head(4)
-ll.add_to_head(5)
-print(ll.head.value)
-ll.reverse_list(ll.head, None)
-print(ll.head.value)
-# breakpoint()
+# Testing
+# ll = LinkedList()
+# ll.add_to_head(1)
+# ll.add_to_head(2)
+# ll.add_to_head(3)
+# ll.add_to_head(4)
+# ll.add_to_head(5)
+# print(ll.head.value)
+# ll.reverse_list(ll.head, None)
+# print(ll.head.value)
+# # breakpoint()
 
